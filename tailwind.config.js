@@ -5,6 +5,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -22,7 +23,8 @@ export default {
         7: "#3A4374",
         8: "#647196",
         9: "#F49F85",
-        10: "#62BCFA"
+        10: "#62BCFA",
+        11: "#D73737"
       },
     },
     fontSize: {
@@ -53,7 +55,8 @@ export default {
       h4: ['.875rem', {
         lineHeight: '1.25rem',
         fontWeight: 700
-      }]
+      }],
+      ...defaultTheme.fontSize
     },
     extend: {
       fontFamily: {
